@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         androidCookieImageView.setImageResource(R.drawable.after_cookie);
 
         // TODO: Find a reference to the TextView in the layout. Change the text.
-
+        TextView statusTextView = (TextView) findViewById(R.id.status_text_view);
+        statusTextView.setText("I'm so full");
     }
 }
